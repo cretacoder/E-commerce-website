@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nostra</title>
+    <!--font link from google--->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
+    <!---my css link --->
+    <link rel="stylesheet" href="style.css">
+
+    <!---Awesome icons from font awesome website ---->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+       
+</head>
+
+<body>
+   
+    <nav class="navbar">
+        <h1>AJAY GARMENTS</h1>
+   
+    <div class="navbar-links">
+        <p  class="navbar-link"><a href="index.html">Home</a></p>
+        <p  class="navbar-link"><a href="collection.html">Collections</a></p>
+        <p  class="navbar-link"><a href="contact.html">Contacts</a></p>
+    </div>
+    <div class="navbar-menu-toggle" onclick="ShowNavbar()">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+    </nav>
+    <!--side nav bar-->
+    <div class="side-navbar">
+        <p style="text-align: right;"  onclick="closeNavbar()">
+            <i class="fa-solid fa-xmark"></i>
+        </p>
+        <div class="side-navbar-links">
+            <p  class="navbar-link"><a href="index.html">Home</a></p>
+            <p  class="navbar-link"><a href="collection.html">Collections</a></p>
+            <p  class="navbar-link"><a href="contact.html">Contacts</a></p>
+         </div>
+    </div>
+    <!--product-->
+    <div class="produc-section">
+        <form class="product-search">
+            <input type="text" placeholder="search" id="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </form>
+
+        <div class="product" id="product">
+            <div class="product-box">
+                <img src="WHITE MEN .jpg" alt="white shirt" width="240px" height="300px">
+                <p>white dress</p>
+            </div>
+
+            <div class="product-box">
+                <img src="BLACK WOMEN.jpeg" alt="white shirt" width="240px" height="300px">
+                <p>Black dress</p>
+            </div>
+
+            <div class="product-box">
+                <img src="GREEN MEN.jpeg" alt="white shirt" width="240px" height="300px">
+                <p>Green dress</p>
+            </div>
+
+            <div class="product-box">
+                <img src="YELLOW OMEN.jpeg" alt="white shirt" width="240px" height="300px"> 
+                <p>Yellow dress</p>
+            </div>
+
+            <div class="product-box">
+                <img src="BLACK MEN.jpeg" alt="white shirt" width="240px" height="300px">
+                <p> Black dress</p>
+            </div>
+
+            <div class="product-box">
+                <img src="WHITE WOMEN.jpg" alt="white shirt" width="240px" height="300px">
+                <p>White shirt</p>
+            </div>
+
+            <div class="product-box">
+                <img src="RED WOMEN.jpeg" alt="white shirt" width="240px" height="300px">
+                <p>Red shirt</p>
+            </div>
+
+            <div class="product-box">
+                <img src="YELLOW MEN.jpg" alt="white shirt" width="240px" height="300px"> 
+                <p>Yellow shirt</p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+ <!---Footer-->
+
+ <div class="footer">
+    <div class="footer-container">
+        <div class="footer-box-1">
+            <h2 class="headingText">Ajay Garments</h2>
+            <p>Lorem, ipsum dolor sit nulla pariatur sint veritatis eligendi, tempore tempora neque a tenetur? Sapiente?</p>
+                <div class="footer-icon-container">
+                    <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-twitter" style="color: #ffffff;"></i >
+                    <i class="fa-brands fa-facebook" style="color: #ffffff;"></i> 
+                </div>
+                   
+        </div>
+    </div>
+    <p>@2024 AjayGarments.com</p>
+ </div>
+
+</div>
+    <script src="collection.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

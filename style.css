@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 500;
+    font-style: italic;     
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    background-color: white;
+    position: fixed; /* Makes the navbar fixed at the top */
+    top: 0; /* Positions it at the very top of the page */
+    left: 0; /* Ensures it spans the full width from the left */
+    width: 100%; /* Makes the navbar stretch across the page */
+    z-index: 9; /* Keeps the navbar above other elements */
+}
+.navbar-links{
+    display: flex;
+    column-gap: 20px;
+    padding-right: 15px;
+}
+.navbar-links a{
+    text-decoration: none;
+    color:#1D232C;
+
+}
+.navbar-links a:hover
+{
+text-decoration: underline;
+color: #1D232C;
+}
+.navbar-menu-toggle{
+    display: none;
+}
+/* side navbar */
+.side-navbar{
+    background-color: #1D232C;
+    width: 50%;
+    height :100%;
+    position: fixed;
+    top: 50px;
+    left: -60%;
+    padding: 20px;
+    color:white;
+   transition: 2s;
+    
+}
+.side-navbar-link{
+   margin-bottom: 30px;
+   
+}
+.side-navbar-links a
+{
+    text-decoration: none;
+    color: white;
+}
+.side-navbar-links a:hover{
+    text-decoration: underline;
+}
+/* Header */
+.header{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+    margin-top: 30px;
+}
+.header-button{
+    padding: 10px; 
+    /* padding-left:20px ;
+    padding-right:20px;
+    padding-top: 10px;
+    padding-bottom:10px; */
+    margin-top: 10px;
+    background-color: #1D232C;
+    color: white;
+    cursor: pointer;
+}
+.service{
+    padding: 20px;
+}
+.service-container-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.service-container-2
+{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.service-container-2 div{
+    background-color: #f2f4f7;
+    border-radius: 5px;
+    padding: 10px;
+}
+.new-arrival{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.new-arrival-container{
+    position: relative;
+    flex-basis: 20%;
+}
+.new-arrival button{
+    padding-left:10%;
+    padding-right:10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top:10px;
+    color: #1D232C;
+    position: absolute;
+    top: 50%;
+    left: 18%;
+    border-radius: 10px;
+    border: none;
+}
+.scrolling-img{
+    animation: scroll-left 2s linear infinite;  
+}
+
+
+.news{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.news input{
+    padding: 11px;
+     width: 80vw; 
+     margin-bottom: 10px; 
+    border: solid black 3px;
+    margin-top: 10px;
+}
+.news button{
+    margin-top: 10px;
+    color: #f2f4f7;
+    background-color: #1D232C;
+    border-radius: 10px;
+    padding: 10px;
+}
+.footer{
+    margin-top: 20px;
+    padding:40px;
+    background-color: #1D232C;
+    color: white;
+}
+ .product-section{
+    margin-top: 20px;
+   
+ }
+
+ .product-search{
+    width: 80%;
+    border: solid black 2px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px;
+    margin: auto;
+    margin-top: 80px;
+ }
+ .product-search input{
+        border: none;
+        background-color: transparent;
+    width: 100%;
+}
+
+.product-search input:focus{
+    outline: none;
+
+}
+.product{
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+.product-box{
+    text-align: center;
+    flex-basis: 20%;
+}
+.product-box img {
+    border-radius: 10px;
+}
+.contact{
+    display: block;
+    background-color: black;
+    color: white;
+    margin-top: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 5px;
+    margin-top: 80px;
+}
+.contact-container
+{
+    padding: 30px;
+    padding-left: 50px;  
+}
+.contact-container input{
+    width: 95%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.contact-container input:focus{
+    outline: none;
+}
+#Message{
+    width: 95%;
+    height: 80px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+#Message:focus{
+    outline:none;
+}
+.contact-container button{
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color:rgb(47, 47, 189);
+    color: white;
+    border-radius: 2px;
+    
+}
+img:hover {
+    transform: scale(1.2); /* Increase the size by 20% */
+}
+  /* Media Query */
+
+ @media screen and  (max-width:600px){
+    .navbar-menu-toggle{display: block;}
+            .navbar{width: 95%;}
+    .navbar-links{ display: none; }
+
+    .header-img { display: none;}
+    
+    .service-container-1{display: none;  }
+
+    .service-container-2{flex-direction: column;}
+
+ }
